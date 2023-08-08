@@ -1,13 +1,7 @@
-
-.checked {
-  color: orange;
-}
-.card{
-  height:300px;
-  width:300px;
-  float:left;
-}
 .title{
   display: flex;
   justify-content: space-between;
+}
+.rating {
+  color: orange;
 }
