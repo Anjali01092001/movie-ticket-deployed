@@ -1,0 +1,17 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: movie-app-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: movie-ticket
+  template:
+    metadata:
+      labels: 
+        app: movie-ticket
+    spec:
+      containers:
+        - name: moviebookapp
+          image: anjalihubdocker/moviebookapp

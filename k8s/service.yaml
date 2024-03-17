@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: movie-app-srv
+spec:
+  selector:
+    app: movie-ticket
+  type: NodePort
+  ports:
+    - name: srvport
+      port: 3000
+      targetPort: 3000
